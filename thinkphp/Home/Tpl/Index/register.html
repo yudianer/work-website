@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册</title>
+<link href="__ROOT__/Home/Tpl/Public/css/css.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+        #pwdLever td
+        {
+           background-color:Gray;
+           text-align:center;
+        }
+</style>
+</head>
+
+<body>
+
+<div class="topbg">
+<div class="top">
+<div class="tople"><a href="/"><img src="images/logo1.jpg" border="0" alt="玩乐之" /></a></div>
+<div class="tuoce">
+
+<a href="__ROOT__/index.php/Index/index/na/login.html">登录</a>   |    <a href="__ROOT__/index.php/Index/index/na/register.html">注册</a>
+
+
+</div>
+<div class="topri">
+
+<a href="__ROOT__/index.php/Index/index/na/index.html" class="dh">首&nbsp;&nbsp;&nbsp;&nbsp;页</a>      
+<a href="__ROOT__/index.php/Index/index/na/gymd.html" class="dh">玩乐解密</a>
+
+<div class="show" onmouseover="showhid('downmenu1')" onmouseout="showhid2('downmenu1')">
+                <a  class="add" onclick="showhid('downmenu1');">关注我们</a>
+                <div class="hidd" id="downmenu1" style=" display:none;">
+               <img src="images/erweima.jpg" width="100" height="100" border="0" />
+         </div></div>
+
+
+
+<div class="lxwm" onmouseover="lxwmhid('downnab1')" onmouseout="lxwmhid2('downnab1')">
+                <a  class="add" onclick="lxwmhid('downnab1');">联系我们</a>
+                <div class="hidd" id="downnab1" style=" display:none;">
+               QQ:123456654		
+         </div></div>
+		 
+
+<script>
+function showhid(id){
+ document.getElementById(id).style.display ='block';
+}
+function showhid2(id){
+ document.getElementById(id).style.display ='none';
+}
+</script>
+
+<script>
+function lxwmhid(id){
+ document.getElementById(id).style.display ='block';
+}
+function lxwmhid2(id){
+ document.getElementById(id).style.display ='none';
+}
+</script>
+<!--判断密码强弱 -->
+<script type="text/javascript">
+        window.onload = function () {
+            var textInput = document.getElementById("txtPwd");
+            //给密码输入框 注册键放开事件
+            textInput.onkeyup = function () {
+                var pwdValue = this.value;
+                var num = pwdChange(pwdValue);
+                var tds = document.getElementById("pwdLever").getElementsByTagName("td");
+                //修改密码颜色
+                if (num == 0 || num == 1) {
+                    tds[0].style.backgroundColor = "red";
+                    tds[1].style.backgroundColor = "gray";
+                    tds[2].style.backgroundColor = "gray";
+                }
+                else if (num == 2) {
+                    tds[0].style.backgroundColor = "red";
+                    tds[1].style.backgroundColor = "red";
+                    tds[2].style.backgroundColor = "gray";
+                }
+                else if (num == 3) {
+                    tds[0].style.backgroundColor = "red";
+                    tds[1].style.backgroundColor = "red";
+                    tds[2].style.backgroundColor = "red";
+                }
+                else {
+                    tds[0].style.backgroundColor = "gray";
+                    tds[1].style.backgroundColor = "gray";
+                    tds[2].style.backgroundColor = "gray";
+                }
+            }
+        }
+        function pwdChange(v) {
+            var num = 0;
+            var reg = /\d/; //如果有数字
+            if (reg.test(v)) {
+                num++;
+            }
+            reg = /[a-zA-Z]/; //如果有字母
+            if (reg.test(v)) {
+                num++;
+            }
+            reg = /[^0-9a-zA-Z]/; //如果有特殊字符
+            if (reg.test(v)) {
+                num++;
+            }
+            if (v.length < 6) { //如果密码小于6
+                num--;
+            }
+            return num;
+        }
+    </script>
+
+
+</div>
+
+</div>
+</div>
+<div class="mdcon">
+
+<div class="content">
+
+<div class="denglu">
+
+<form name="login" action="" method="post" style="color:#6AD9ED;">
+手机号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input style="border:1px solid #6AD9ED;width:300px" type="text" name="username" /> <br />
+短信动态码 <input style="border:1px solid #6AD9ED;width:220px" type="text" name="password" /> <button style="background-color:#6AD9ED;" name="get_pass">获取动态码</button><br />
+创建密码&nbsp;&nbsp;&nbsp; <input style="border:1px solid #6AD9ED;width:300px" type="password" name="txtPwd" id="txtPwd" /> <br />
+<div style="height:20px;overflow:hidden;margin-left:20px">
+<table id="pwdLever" style="width=200px;height:20px">
+    <tr width="100px">
+        <td width="100px" height="10px">弱</td>
+        <td width="100px">中</td>
+        <td width="100px">强</td>
+   </tr>
+</table>
+</div>
+确认密码&nbsp;&nbsp;&nbsp; <input style="border:1px solid #6AD9ED;width:300px" type="password" name="txtPwd" /> <br />
+
+<input style="background-color:#6AD9ED;width:220px;height:30px ; margin-left:125px;" type="submit" value="同意以下协议并注册" />
+</form>
+<a href='' style="color:#6AD9ED;margin-left:180px;text-decoration:none">《用户协议》</a>
+
+
+</div>
+
+<div class="ycwz">
+
+说过抗力 撒娇和打开了就爱上看到了哈斯<br />
+萨科技都圣诞快乐哈撒 啥都会看见<br />
+谁看见爱就爱上看到哈萨洛克 <br />
+看啥都看俺还是看见的话<br />
+萨科技活动快结婚<br />
+就是快的话<br />
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+</body>
+</html>

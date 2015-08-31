@@ -1,0 +1,678 @@
+[ 2015-08-28T11:13:21+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:addComment
+
+[ 2015-08-28T11:14:39+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=ASDasdSDasd&demo=%E9%BA%A6%E5%BD%93%E5%8A%B3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:addComment
+
+[ 2015-08-28T11:15:49+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=ASDasdSDasd&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:addComment
+
+[ 2015-08-28T11:17:26+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=ASDasdSDasd&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:addComment
+
+[ 2015-08-28T11:18:23+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=sdfasdfasf&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','sdfasdfasf',0,'1-1') [ RunTime:2.093750s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='sdfasdfasf' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.390625s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:20:15+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=sdfasdfasfdasfadf&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','sdfasdfasfdasfadf',0,'1-1') [ RunTime:0.062500s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='sdfasdfasfdasfadf' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:20:26+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=adsfasdfasdf&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','adsfasdfasdf',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='adsfasdfasdf' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:22:40+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=asdfasdfaf&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','asdfasdfaf',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='asdfasdfaf' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:23:07+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=asdfasdfaf&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','asdfasdfaf',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='asdfasdfaf' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:23:15+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=sarsdfgsdf&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','sarsdfgsdf',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='sarsdfgsdf' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:31:04+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=sarsdfgsdf&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','sarsdfgsdf',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='sarsdfgsdf' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:31:32+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E9%98%BF%E6%96%AF%E9%A1%BF%E5%8F%91%E9%80%81%E5%88%B0%E5%8F%91%E5%A4%A7%E6%B0%B4&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','阿斯顿发送到发大水',0,'1-1') [ RunTime:0.062500s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='阿斯顿发送到发大水' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:33:07+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E9%98%BF%E6%96%AF%E9%A1%BF%E5%8F%91%E9%80%81%E5%88%B0%E5%8F%91%E5%A4%A7%E6%B0%B4&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','阿斯顿发送到发大水',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='阿斯顿发送到发大水' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:33:08+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addCommentIdUser?user_name=userName&comment_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zaned` [ RunTime:0.015625s ]
+SQL: INSERT INTO `zaned` (`user_name`) VALUES ('userName') [ RunTime:0.062500s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: SELECT `approving_num` FROM `comment` WHERE ( comment_id='1' )  [ RunTime:0.031250s ]
+ERR: 1054:Unknown column 'comment_id' in 'where clause'
+ [ SQL语句 ] : SELECT `approving_num` FROM `comment` WHERE ( comment_id='1' ) 
+SQL: UPDATE `comment` SET `approving_num`=1 WHERE ( comment_id='1' ) [ RunTime:0.015625s ]
+ERR: 1054:Unknown column 'comment_id' in 'where clause'
+ [ SQL语句 ] : UPDATE `comment` SET `approving_num`=1 WHERE ( comment_id='1' )
+
+[ 2015-08-28T11:35:59+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E9%98%BF%E6%89%93%E5%8F%91%E6%96%AF%E8%92%82%E8%8A%AC&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','阿打发斯蒂芬',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='阿打发斯蒂芬' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:36:48+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E9%98%BF%E6%89%93%E5%8F%91%E6%96%AF%E8%92%82%E8%8A%AC%E5%A4%A7%E6%B3%95%E5%B8%88%E7%9A%84&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','阿打发斯蒂芬大法师的',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='阿打发斯蒂芬大法师的' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:37:01+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E9%98%BF%E6%96%AF%E9%A1%BF%E5%8F%91%E9%80%81%E5%88%B0%E6%96%B9%E6%B3%95&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','阿斯顿发送到方法',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='阿斯顿发送到方法' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:37:28+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=asdfasdfasd&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','asdfasdfasd',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='asdfasdfasd' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:38:20+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E9%98%BF%E6%96%AF%E9%A1%BF%E5%8F%91%E5%9C%B0%E6%96%B9%E7%9A%84%E5%8F%B8%E6%B3%95%E6%96%AF%E8%92%82%E8%8A%AC&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','阿斯顿发地方的司法斯蒂芬',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='阿斯顿发地方的司法斯蒂芬' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:38:20+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addCommentIdUser?user_name=userName&comment_id=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zaned` [ RunTime:0.000000s ]
+SQL: INSERT INTO `zaned` (`user_name`) VALUES ('userName') [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: SELECT `approving_num` FROM `comment` WHERE ( comment_id='2' )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment_id' in 'where clause'
+ [ SQL语句 ] : SELECT `approving_num` FROM `comment` WHERE ( comment_id='2' ) 
+SQL: UPDATE `comment` SET `approving_num`=1 WHERE ( comment_id='2' ) [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment_id' in 'where clause'
+ [ SQL语句 ] : UPDATE `comment` SET `approving_num`=1 WHERE ( comment_id='2' )
+
+[ 2015-08-28T11:39:43+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E9%98%BF%E6%96%AF%E8%92%82%E8%8A%AC&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','阿斯蒂芬',0,'1-1') [ RunTime:0.046875s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='阿斯蒂芬' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:41:51+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E5%95%8A%E6%89%93%E7%AE%97%E5%8F%91%E6%9D%BE%E5%B2%9B%E6%9E%AB&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','啊打算发松岛枫',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='啊打算发松岛枫' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:42:41+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E6%98%AF%E7%9A%84%E5%8F%91%E9%80%81%E5%88%B0%E5%8F%91%E9%80%81%E5%88%B0%E5%8F%91%E9%80%81%E5%88%B0&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','是的发送到发送到发送到',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='是的发送到发送到发送到' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:43:54+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E5%8D%81%E5%A4%A7%E5%8F%91%E9%80%81%E5%88%B0%E5%8F%91%E9%80%81%E5%88%B0&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','十大发送到发送到',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='十大发送到发送到' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:45:43+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E9%98%BF%E6%96%AF%E9%A1%BF%E5%8F%91%E9%80%81%E5%88%B0%E5%8F%91%E9%80%81%E5%88%B0%E5%8F%91&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','阿斯顿发送到发送到发',0,'1-1') [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='阿斯顿发送到发送到发' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:52:25+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E6%98%AF%E5%AF%B9%E6%96%B9%E5%91%8A%E8%AF%89%E5%AF%B9%E6%96%B9%E4%B8%AA&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','是对方告诉对方个',0,'1-1') [ RunTime:0.046875s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='是对方告诉对方个' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:54:57+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E5%B1%B1%E4%B8%9C%E5%88%86%E5%85%AC%E5%8F%B8&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','山东分公司',0,'1-1') [ RunTime:0.046875s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='山东分公司' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:56:01+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=%E5%A4%A7%E4%BA%8B%E5%8F%91%E7%94%9F%E5%A4%A7%E4%BA%8B%E7%9A%84%E5%8F%91%E9%80%81%E5%88%B0&demo=1-1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `comment` (`user_name`,`user_image`,`comment`,`approving_num`,`demo`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','大事发生大事的发送到',0,'1-1') [ RunTime:0.046875s ]
+SQL: SELECT `id` FROM `comment` WHERE ( user_name='默认用户名' and comment='大事发生大事的发送到' and demo='1-1' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 125 行.
+
+[ 2015-08-28T11:56:03+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addCommentIdUser?user_name=userName&comment_id=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zaned` [ RunTime:0.000000s ]
+SQL: INSERT INTO `zaned` (`user_name`) VALUES ('userName') [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.015625s ]
+SQL: SELECT `approving_num` FROM `comment` WHERE ( comment_id='2' )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment_id' in 'where clause'
+ [ SQL语句 ] : SELECT `approving_num` FROM `comment` WHERE ( comment_id='2' ) 
+SQL: UPDATE `comment` SET `approving_num`=1 WHERE ( comment_id='2' ) [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment_id' in 'where clause'
+ [ SQL语句 ] : UPDATE `comment` SET `approving_num`=1 WHERE ( comment_id='2' )
+
+[ 2015-08-28T15:49:10+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T15:50:25+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T15:54:08+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T15:54:08+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T15:57:06+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T15:57:06+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:03:28+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:03:28+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:05:11+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:05:11+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:07:15+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:07:15+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:07:29+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:07:29+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:08:12+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:08:12+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:08:19+08:00 ] 127.0.0.1 /thinkphp/index.php/Dream/addComment?user_name=&content=adfasdfas
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_image D:\wamp\www\thinkphp\Home\Lib\Action\DreamAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dream_comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('',null,0) [ RunTime:0.031250s ]
+ERR: 1048:Column 'user_image' cannot be null
+ [ SQL语句 ] : INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('',null,0)
+SQL: SELECT `id` FROM `dream_comment` WHERE ( user_name='' and comment='adfasdfas' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dream_comment` WHERE ( user_name='' and comment='adfasdfas' and approving_num='0' ) ORDER BY id desc LIMIT 1  
+
+[ 2015-08-28T16:08:19+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:09:40+08:00 ] 127.0.0.1 /thinkphp/index.php/Dream/addComment?user_name=&content=adfasdfas
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_image D:\wamp\www\thinkphp\Home\Lib\Action\DreamAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `dream_comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('',null,0) [ RunTime:0.000000s ]
+ERR: 1048:Column 'user_image' cannot be null
+ [ SQL语句 ] : INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('',null,0)
+SQL: SELECT `id` FROM `dream_comment` WHERE ( user_name='' and comment='adfasdfas' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dream_comment` WHERE ( user_name='' and comment='adfasdfas' and approving_num='0' ) ORDER BY id desc LIMIT 1  
+
+[ 2015-08-28T16:09:40+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:09:44+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:09:44+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:09:47+08:00 ] 127.0.0.1 /thinkphp/index.php/Dream/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=adfasdfasdf
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dream_comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg',0) [ RunTime:0.046875s ]
+SQL: SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='adfasdfasdf' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='adfasdfasdf' and approving_num='0' ) ORDER BY id desc LIMIT 1  
+
+[ 2015-08-28T16:10:04+08:00 ] 127.0.0.1 /thinkphp/index.php/Dream/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=adfasdfasdfasdfasdfasdfasdfsad
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dream_comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg',0) [ RunTime:0.046875s ]
+SQL: SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='adfasdfasdfasdfasdfasdfasdfsad' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='adfasdfasdfasdfasdfasdfasdfsad' and approving_num='0' ) ORDER BY id desc LIMIT 1  
+
+[ 2015-08-28T16:10:39+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:10:39+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:10:53+08:00 ] 127.0.0.1 /thinkphp/index.php/Dream/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=asdfasdfasdfasdf
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dream_comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg',0) [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='asdfasdfasdfasdf' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='asdfasdfasdfasdf' and approving_num='0' ) ORDER BY id desc LIMIT 1  
+
+[ 2015-08-28T16:10:55+08:00 ] 127.0.0.1 /thinkphp/index.php/FreeLunch/addCommentIdUser?user_name=userName
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zaned` [ RunTime:0.031250s ]
+NOTIC: [8] Undefined index: comment_id D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 90 行.
+NOTIC: [8] Undefined index: comment_id D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 92 行.
+NOTIC: [8] Undefined index: demo D:\wamp\www\thinkphp\Home\Lib\Action\FreeLunchAction.class.php 第 94 行.
+SQL: INSERT INTO `zaned` (`user_name`) VALUES ('userName') [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000000s ]
+SQL: SELECT `approving_num` FROM `comment` WHERE ( comment_id='' )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment_id' in 'where clause'
+ [ SQL语句 ] : SELECT `approving_num` FROM `comment` WHERE ( comment_id='' ) 
+SQL: UPDATE `comment` SET `approving_num`=1 WHERE ( comment_id='' ) [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment_id' in 'where clause'
+ [ SQL语句 ] : UPDATE `comment` SET `approving_num`=1 WHERE ( comment_id='' )
+
+[ 2015-08-28T16:17:30+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:17:30+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:17:34+08:00 ] 127.0.0.1 /thinkphp/index.php/Dream/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=adfasdf
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dream_comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg',0) [ RunTime:0.046875s ]
+SQL: SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='adfasdf' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='adfasdf' and approving_num='0' ) ORDER BY id desc LIMIT 1  
+
+[ 2015-08-28T16:18:58+08:00 ] 127.0.0.1 /thinkphp/index.php/Dream/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=adfasdfsdfasdfaf
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `dream_comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg',0) [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='adfasdfsdfasdfaf' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.031250s ]
+ERR: 1054:Unknown column 'comment' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='adfasdfsdfasdfaf' and approving_num='0' ) ORDER BY id desc LIMIT 1  
+
+[ 2015-08-28T16:22:03+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:22:03+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:22:09+08:00 ] 127.0.0.1 /thinkphp/index.php/Dream/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=DASDFASFD
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dream_comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg',0) [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='DASDFASFD' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='DASDFASFD' and approving_num='0' ) ORDER BY id desc LIMIT 1  
+
+[ 2015-08-28T16:22:49+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:22:49+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:22:53+08:00 ] 127.0.0.1 /thinkphp/index.php/Dream/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=ASDFASDF
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dream_comment` [ RunTime:0.015625s ]
+SQL: INSERT INTO `dream_comment` (`user_name`,`user_image`,`approving_num`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg',2) [ RunTime:0.046875s ]
+SQL: SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='ASDFASDF' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'comment' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='ASDFASDF' and approving_num='0' ) ORDER BY id desc LIMIT 1  
+
+[ 2015-08-28T16:23:59+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:23:59+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:24:07+08:00 ] 127.0.0.1 /thinkphp/index.php/Dream/addComment?user_name=%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D&user_image=%2Fthinkphp%2FHome%2FTpl%2FPublic%2Fimages%2Ftx.jpg&content=adsfasfdasdfcvzxcvz
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dream_comment` [ RunTime:0.000000s ]
+SQL: INSERT INTO `dream_comment` (`user_name`,`user_image`,`comment`,`approving_num`) VALUES ('默认用户名','/thinkphp/Home/Tpl/Public/images/tx.jpg','adsfasfdasdfcvzxcvz',0) [ RunTime:0.031250s ]
+SQL: SELECT `id` FROM `dream_comment` WHERE ( user_name='默认用户名' and comment='adsfasfdasdfcvzxcvz' and approving_num='0' ) ORDER BY id desc LIMIT 1   [ RunTime:0.015625s ]
+NOTIC: [2] Illegal string offset 'id' D:\wamp\www\thinkphp\Home\Lib\Action\DreamAction.class.php 第 27 行.
+
+[ 2015-08-28T16:26:46+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:26:46+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:27:38+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:27:38+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:28:37+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:28:37+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:31:13+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:31:13+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:31:17+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:31:17+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:31:25+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:31:25+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:31:32+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:31:32+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T16:31:53+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T16:31:53+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T18:09:06+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T18:09:06+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T18:09:31+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T18:09:31+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T18:10:24+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T18:10:24+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T18:10:27+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T18:10:27+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T18:10:52+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T18:10:52+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T18:11:13+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T18:11:13+08:00 ] 127.0.0.1 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T21:24:04+08:00 ] 0.0.0.0 /thinkphp/
+ERR: Acc�s refus� pour l'utilisateur: 'root'@'@localhost' (mot de passe: NON)
+
+[ 2015-08-28T21:25:36+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T21:25:36+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:16:41+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T22:16:41+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:17:43+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T22:17:43+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:18:03+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:18:03+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T22:19:06+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:19:06+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T22:19:06+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:19:40+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T22:19:40+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:19:59+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T22:19:59+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:20:25+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T22:20:25+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:20:25+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T22:20:48+08:00 ] 0.0.0.0 /thinkphp/index.php/Dream/signTimesPP?sign_time=1440771648357
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+
+[ 2015-08-28T22:33:08+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+
+[ 2015-08-28T22:33:08+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:33:10+08:00 ] 0.0.0.0 /thinkphp/index.php/Dream/signTimesPP
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+
+[ 2015-08-28T22:33:38+08:00 ] 0.0.0.0 /thinkphp/index.php/Dream/signTimesPP
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+
+[ 2015-08-28T22:34:34+08:00 ] 0.0.0.0 /thinkphp/index.php/Dream/signTimesPP
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+NOTIC: [8] Undefined index: username H:\wamp\www\thinkphp\Home\Lib\Action\DreamAction.class.php 第 36 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead H:\wamp\www\thinkphp\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `dream_sign` [ RunTime:0.006339s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead H:\wamp\www\thinkphp\ThinkPHP\Lib\Core\Db.class.php 第 605 行.
+SQL: SELECT `sign_num` FROM `dream_sign` WHERE ( user_name='' ) LIMIT 1   [ RunTime:0.000421s ]
+SQL: UPDATE `dream_sign` SET `sign_time`=1440772473,`sign_num`=1 WHERE ( user_name='jack' ) [ RunTime:0.055995s ]
+
+[ 2015-08-28T22:34:56+08:00 ] 0.0.0.0 /thinkphp/index.php/Dream/signTimesPP
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+NOTIC: [8] Undefined index: username H:\wamp\www\thinkphp\Home\Lib\Action\DreamAction.class.php 第 36 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead H:\wamp\www\thinkphp\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `dream_sign` [ RunTime:0.004488s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead H:\wamp\www\thinkphp\ThinkPHP\Lib\Core\Db.class.php 第 605 行.
+SQL: SELECT `sign_num` FROM `dream_sign` WHERE ( user_name='' ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: UPDATE `dream_sign` SET `sign_time`=1440772496,`sign_num`=1 WHERE ( user_name='jack' ) [ RunTime:0.001538s ]
+
+[ 2015-08-28T22:36:22+08:00 ] 0.0.0.0 /thinkphp/index.php/Dream/signTimesPP
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+NOTIC: [8] Undefined index: username H:\wamp\www\thinkphp\Home\Lib\Action\DreamAction.class.php 第 36 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead H:\wamp\www\thinkphp\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `dream_sign` [ RunTime:0.004608s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead H:\wamp\www\thinkphp\ThinkPHP\Lib\Core\Db.class.php 第 605 行.
+SQL: SELECT `sign_num` FROM `dream_sign` WHERE ( user_name='jack' ) LIMIT 1   [ RunTime:0.000414s ]
+NOTIC: [2] Illegal string offset 'sign_num' H:\wamp\www\thinkphp\Home\Lib\Action\DreamAction.class.php 第 41 行.
+SQL: UPDATE `dream_sign` SET `sign_time`=1440772582,`sign_num`=2 WHERE ( user_name='jack' ) [ RunTime:0.002038s ]
+
+[ 2015-08-28T22:38:23+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-28T22:38:23+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+

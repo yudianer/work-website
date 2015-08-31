@@ -1,0 +1,6 @@
+[ 2015-08-15T11:45:38+08:00 ] 127.0.0.1 /thinkphp/admin.php/Redirect/imedit2
+ERR: 模板不存在[./Admin/Tpl/Redirect/imedit2.html]
+
+[ 2015-08-15T11:47:05+08:00 ] 127.0.0.1 /thinkphp/admin.php/Redirect/imedit2
+ERR: 模板不存在[./Admin/Tpl/Redirect/imedit2.html]
+

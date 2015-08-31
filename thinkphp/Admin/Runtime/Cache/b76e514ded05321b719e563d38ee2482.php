@@ -1,0 +1,96 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<head>
+<title>点赞网站</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="__TMPL__Public/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="StyleSheet" href="__TMPL__Public/css/dtree.css" type="text/css" />
+<script type="text/javascript" src="__TMPL__Public/js/dtree.js"></script>
+</head>
+<body scroll="no">
+
+<!--__URL__:/thinkphp/admin.php/Index   当前模块的URL地址-->
+<!--__TMPL__:/thinkphp/Admin/Tpl/   项目的模板目录 通常是 /项目目录/Tpl/当前主题/  -->
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="79" background="__TMPL__Public/images/top_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="500"><!-- <img src="__TMPL__Public/images/top_left.gif" width="500" height="79"> --><h1 style='margin-left:50px'>&nbsp;e智美后台管理系统</h1></td>
+          <td>&nbsp;</td>
+          <td width="500" height="79"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="__TMPL__Public/images/top_right_a.gif" width="500" height="47"></td>
+              </tr>
+              <tr>
+                <td><table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="150"><img src="__TMPL__Public/images/top_right_b1.gif" width="150" height="32"></td>
+                    <td width="146" height="32" background="__TMPL__Public/images/top_right_b2.gif" class="white">用户：<?php echo ($admin); ?></td>
+                    <td width="74"><a href="__TMPL__Index/passwd.html" target="page"><img src="__TMPL__Public/images/top_right_b6.gif" width="74" height="32" border="0"></a></td>
+                    <td width="50"><a href="__URL__/index"><img src="__TMPL__Public/images/top_right_b3.gif" width="50" height="32" border="0"></a></td>
+                    <td width="50"><a href="#"><img src="__TMPL__Public/images/top_right_b4.gif" width="50" height="32" border="0"></a></td>
+                    <td width="30"><img src="__TMPL__Public/images/top_right_b5.gif" width="30" height="32"></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="100%"><table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" style="background-repeat: repeat-x;">
+        <tr>
+          <td width="175" height="100%" valign="top"><table width="175" height="100%" border="0" cellspacing="0" cellpadding="0" background="__TMPL__Public/images/menu_bg.gif">
+              <tr>
+                <td height="25"><img src="__TMPL__Public/images/menu_top.gif" width="175" height="25"></td>
+              </tr>
+              <tr>
+                <td height="100%" style="background-image:url(__TMPL__Public/images/menu_bgT.gif); background-repeat:no-repeat" valign="top"><div class="dtree">
+                    <script type="text/javascript">
+					d = new dTree('d');
+					d.config.stepDepth = 1;
+					d.config.useStatusText = true;
+					
+					d.add(0,-1,' <strong>后台管理</strong>');
+					d.add(5,0,'后台设置');
+					d.add(501,5,'数据统计');
+					d.add(50101,501,'注册用户统计','__TMPL__Index/pages/fwj/01_list.html',"",'page');
+					d.add(50102,501,'页面访问统计','__TMPL__Index/pages/fwj/02_list.html',"",'page');
+
+					d.add(502,5,'商家管理');
+					d.add(50201,502,'图片文字内容编辑','__TMPL__Index/pages/rdjg/01_list.html',"",'page');
+          d.add(50202,502,'商家信息编辑','__TMPL__Index/pages/rdjg/01_list.html',"",'page');
+
+          d.add(503,5,'会员管理');
+          d.add(50301,503,'会员列表','__TMPL__Index/pages/rdjg/01_list.html',"",'page');
+          d.add(50302,503,'添加会员','__TMPL__Index/pages/rdjg/01_list.html',"",'page');
+
+          d.add(504,5,'系统管理');
+          d.add(50401,504,'玩乐之首页','__ROOT__/admin.php/Redirect/location/url/41_list.html',"",'page');
+          d.add(50402,504,'玩乐之免单','__ROOT__/admin.php/Redirect/location/url/42_list.html',"",'page');
+          d.add(50403,504,'玩乐之免单详情','__ROOT__/admin.php/Redirect/location/url/43_list.html',"",'page');
+          d.add(50404,504,'玩乐之梦想','__ROOT__/admin.php/Redirect/location/url/44_list.html',"",'page');
+          d.add(50405,504,'玩乐之智商','__ROOT__/admin.php/Redirect/location/url/45_list.html',"",'page');
+          d.add(50406,504,'玩乐之约会','__ROOT__/admin.php/Redirect/location/url/46_list.html',"",'page');
+          d.add(50407,504,'玩乐解密','__ROOT__/admin.php/Redirect/location/url/47_list.html',"",'page');
+          d.add(50408,504,'我的玩乐','__ROOT__/admin.php/Redirect/location/url/48_list.html',"",'page');
+          d.add(50409,504,'注册页面','__ROOT__/admin.php/Redirect/location/url/49_list.html',"",'page');
+          d.add(50410,504,'登录页面','__ROOT__/admin.php/Redirect/location/url/410_list.html',"",'page');
+          d.add(50411,504,'玩乐资料','__ROOT__/admin.php/Redirect/location/url/411_list.html',"",'page');
+          d.add(50412,504,'玩乐之摄影','__ROOT__/admin.php/Redirect/location/url/412_list.html',"",'page');
+
+
+					document.writeln(d);
+					</script>
+                </div></td>
+              </tr>
+              <tr>
+                <td height="31"><img src="__TMPL__Public/images/menu_foot.gif" width="175" height="31"></td>
+              </tr>
+            </table></td>
+          <td><iframe src="" width="100%" height="100%" frameborder="0" scrolling="yes" name="page" style="background:#ccc"></iframe></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[ 2015-08-28T13:45:53+08:00 ] 127.0.0.1 /thinkphp/admin.php/Redirect/location/url/js/jquery.min.js
+ERR: 模板不存在[./Admin/Tpl/Redirect/js.html]
+
+[ 2015-08-28T13:45:55+08:00 ] 127.0.0.1 /thinkphp/admin.php/Redirect/location/url/ckeditor/ckeditor.js
+ERR: 模板不存在[./Admin/Tpl/Redirect/ckeditor.html]
+
+[ 2015-08-28T14:05:42+08:00 ] 127.0.0.1 /thinkphp/admin.php/Redirect/location/url/js/jquery.min.js
+ERR: 模板不存在[./Admin/Tpl/Redirect/js.html]
+
+[ 2015-08-28T14:05:47+08:00 ] 127.0.0.1 /thinkphp/admin.php/Redirect/location/url/ckeditor/ckeditor.js
+ERR: 模板不存在[./Admin/Tpl/Redirect/ckeditor.html]
+
+[ 2015-08-28T22:54:41+08:00 ] 0.0.0.0 /thinkphp/admin.php/Confirm/login?name=admin&pwd=admin
+ERR: Acc�s refus� pour l'utilisateur: 'root'@'@localhost' (mot de passe: NON)
+
+[ 2015-08-28T23:39:39+08:00 ] 0.0.0.0 /thinkphp/admin.php/Wisdom/saveData
+ERR: 非法操作:saveData
+

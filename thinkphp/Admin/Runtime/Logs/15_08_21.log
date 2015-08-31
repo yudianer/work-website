@@ -1,0 +1,12 @@
+[ 2015-08-21T14:21:50+08:00 ] 127.0.0.1 /thinkphp/admin.php/Redirect/location/url/46_list.html
+ERR: 模板不存在[./Admin/Tpl/Redirect/46_list.html]
+
+[ 2015-08-21T14:22:00+08:00 ] 127.0.0.1 /thinkphp/admin.php/Redirect/location/url/48_list.html
+ERR: 模板不存在[./Admin/Tpl/Redirect/48_list.html]
+
+[ 2015-08-21T14:22:05+08:00 ] 127.0.0.1 /thinkphp/admin.php/Redirect/location/url/411_list.html
+ERR: 模板不存在[./Admin/Tpl/Redirect/411_list.html]
+
+[ 2015-08-21T14:22:07+08:00 ] 127.0.0.1 /thinkphp/admin.php/Redirect/location/url/412_list.html
+ERR: 模板不存在[./Admin/Tpl/Redirect/412_list.html]
+

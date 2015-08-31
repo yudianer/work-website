@@ -1,0 +1,78 @@
+[ 2015-08-29T10:40:55+08:00 ] 0.0.0.0 /thinkphp/index.php/Wisdom/saveAnser
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001818s ]
+
+[ 2015-08-29T10:41:52+08:00 ] 0.0.0.0 /thinkphp/index.php/Wisdom/saveAnser
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+
+[ 2015-08-29T10:43:37+08:00 ] 0.0.0.0 /thinkphp/index.php/Wisdom/saveAnser?sub_anser=A
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+
+[ 2015-08-29T10:43:52+08:00 ] 0.0.0.0 /thinkphp/index.php/Wisdom/saveAnser?sub_anser=A
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003486s ]
+
+[ 2015-08-29T10:45:10+08:00 ] 0.0.0.0 /thinkphp/index.php/Wisdom/saveAnser?sub_anser=A
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+
+[ 2015-08-29T10:58:18+08:00 ] 0.0.0.0 /thinkphp/index.php/Wisdom/saveAnser?sub_anser=C
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+
+[ 2015-08-29T11:13:17+08:00 ] 0.0.0.0 /thinkphp/index.php/Wisdom/saveAnser?sub_anser=C
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+
+[ 2015-08-29T11:16:07+08:00 ] 0.0.0.0 /thinkphp/index.php/Wisdom/saveAnser?sub_anser=D
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003010s ]
+
+[ 2015-08-29T11:16:15+08:00 ] 0.0.0.0 /thinkphp/index.php/Wisdom/saveAnser?sub_anser=C
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+
+[ 2015-08-29T14:29:26+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/css/css.css
+ERR: 模板不存在[./Home/Tpl/Index/css.html]
+
+[ 2015-08-29T14:29:26+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/css/yuehui.css
+ERR: 模板不存在[./Home/Tpl/Index/css.html]
+
+[ 2015-08-29T14:29:26+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/js/zzsc.js
+ERR: 模板不存在[./Home/Tpl/Index/js.html]
+
+[ 2015-08-29T14:29:26+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/js/jquery.js
+ERR: 模板不存在[./Home/Tpl/Index/js.html]
+
+[ 2015-08-29T14:29:56+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/css/css.css
+ERR: 模板不存在[./Home/Tpl/Index/css.html]
+
+[ 2015-08-29T14:29:56+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/css/yuehui.css
+ERR: 模板不存在[./Home/Tpl/Index/css.html]
+
+[ 2015-08-29T14:29:56+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/js/jquery.js
+ERR: 模板不存在[./Home/Tpl/Index/js.html]
+
+[ 2015-08-29T14:29:56+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/js/zzsc.js
+ERR: 模板不存在[./Home/Tpl/Index/js.html]
+
+[ 2015-08-29T15:33:20+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/javascript
+ERR: 模板不存在[./Home/Tpl/Index/javascript.html]
+
+[ 2015-08-29T16:49:44+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/sdf
+ERR: 模板不存在[./Home/Tpl/Index/sdf.html]
+
+[ 2015-08-29T16:49:44+08:00 ] 0.0.0.0 /thinkphp/index.php/Index/index/na/touxiang
+ERR: 模板不存在[./Home/Tpl/Index/touxiang.html]
+

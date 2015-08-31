@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的约会</title>
+<link href="__ROOT__/Home/Tpl/Public/css/css.css" type="text/css" rel="stylesheet" />
+
+<style>
+*{margin:0;padding:0;}
+li{list-style:none;}
+.box{width:160px;height:100px;overflow:hidden;}
+.box ul li{width:200px;height:100px;float:left;position:relative;overflow:hidden;}
+.box ul li .dask{width:170px;height:100px; text-align:center; line-height:100px;background:#000;opacity:0.8;position:absolute;top:-100px;left:0;}
+.box ul li .dask p{color:#fff;}
+.box ul li .dask a{color:#ffffff; font-family:"microsoft yahei"; text-decoration:none}
+</style>
+<script type="text/javascript" src="http://www.codefans.net/ajaxjs/jquery-1.9.1.min.js"></script>
+<script>
+$(function () {
+	$(".box ul li").hover(
+		function () {
+			$(this).find(".dask").stop().delay(50).animate({"top":0,opacity:0.8},300)
+		 },
+		function () {
+			$(this).find(".dask").stop().animate({"top":-200,opacity:0},300)
+		}
+
+	)
+})
+</script>
+
+
+</head>
+
+<body>
+
+<div class="topbg">
+<div class="top">
+<div class="tople"><a href="/"><img src="__ROOT__/Home/Tpl/Public/images/logo1.jpg" border="0" alt="玩乐之" /></a></div>
+<div class="tuoce">
+
+<div class="huiyuan"><a href="/"><img src="__ROOT__/Home/Tpl/Public/images/yuhui.jpg" class="img" /></a></div>
+
+<div class="yhm" onmouseover="yhmhid('downyhm1')" onmouseout="yhmhid2('downyhm1')">
+                <a  class="addd" onclick="yhmhid('downyhm1');">最棒的学渣</a>
+                <div class="hidn" id="downyhm1" style=" display:none;">
+               <a href="wdzl.html">玩乐资料</a><br /> <a href="wdyh.html">我的玩乐</a>
+         </div></div>
+<script>
+function yhmhid(id){
+ document.getElementById(id).style.display ='block';
+}
+function yhmhid2(id){
+ document.getElementById(id).style.display ='none';
+}
+</script>
+
+
+
+</div>
+
+
+
+<div class="topri">
+
+<a href="__ROOT__/index.php/Index/index/na/index.html" class="dh">首&nbsp;&nbsp;&nbsp;&nbsp;页</a>      
+<a href="__ROOT__/index.php/Index/index/na/gymd.html" class="dh">玩乐解密</a>
+
+<div class="show" onmouseover="showhid('downmenu1')" onmouseout="showhid2('downmenu1')">
+                <a  class="add" onclick="showhid('downmenu1');">关注我们</a>
+                <div class="hidd" id="downmenu1" style=" display:none;">
+               <img src="__ROOT__/Home/Tpl/Public/images/erweima.jpg" width="100" height="100" border="0" />
+         </div></div>
+
+
+
+<div class="lxwm" onmouseover="lxwmhid('downnab1')" onmouseout="lxwmhid2('downnab1')">
+                <a  class="add" onclick="lxwmhid('downnab1');">联系我们</a>
+                <div class="hidd" id="downnab1" style=" display:none;">
+               QQ:123456654		
+         </div></div>
+		 
+
+<script>
+function showhid(id){
+ document.getElementById(id).style.display ='block';
+}
+function showhid2(id){
+ document.getElementById(id).style.display ='none';
+}
+</script>
+
+<script>
+function lxwmhid(id){
+ document.getElementById(id).style.display ='block';
+}
+function lxwmhid2(id){
+ document.getElementById(id).style.display ='none';
+}
+</script>
+
+
+
+</div>
+
+</div>
+</div>
+
+
+<div class="mdcon">
+
+<div class="wdyh">
+
+<div class="jmle">
+<div class="jmle">
+<div class="sxmenu">
+<ul>
+<li><a href="__ROOT__/index.php/Index/index/na/wdzl.html">玩乐资料</a></li>
+<li><a href="__ROOT__/index.php/Index/index/na/wdmd.html">我的免单</a></li>
+<li class="selected"><a href="wdyh.html">我的约会</a></li>
+<li><a href="__ROOT__/index.php/Index/index/na/wdmx.html">我的梦想</a></li>
+<li><a href="__ROOT__/index.php/Index/index/na/wdzs.html">我的智商</a></li>
+<li><a href="__ROOT__/index.php/Index/index/na/wdsy.html">我的摄影</a></li>
+</ul></div>
+</div>
+
+
+</div>
+
+<div class="wdyc">
+<div class="bt">我的约会</div>
+<div class="yhjl">
+<span class="sj">2015年7月10号</span>
+
+<div class="box">
+<ul>
+	<li>
+		<a href="/"><img src="__ROOT__/Home/Tpl/Public/images/zxsctp_03.jpg" class="img" /></a>
+		<div class="dask">
+			
+			<a href="/">删除</a>
+		</div>
+	</li>
+	
+</ul>
+</div>
+<div class="bt">我和他第一次见面好无聊哦<span class="zf">100人祝福</span></div></div>
+
+<div class="yhjl">
+<span class="sj">2015年7月10号</span>
+
+<div class="box">
+<ul>
+	<li>
+		<a href="/"><img src="__ROOT__/Home/Tpl/Public/images/zxsctp_03.jpg" class="img" /></a>
+		<div class="dask">
+			
+			<a href="/">删除</a>
+		</div>
+	</li>
+	
+</ul>
+</div>
+<div class="bt">我和他第一次见面好无聊哦<span class="zf">100人祝福</span></div></div>
+
+<div class="yhjl">
+<span class="sj">2015年7月10号</span>
+
+<div class="box">
+<ul>
+	<li>
+		<a href="/"><img src="__ROOT__/Home/Tpl/Public/images/zxsctp_03.jpg" class="img" /></a>
+		<div class="dask">
+			
+			<a href="/">删除</a>
+		</div>
+	</li>
+	
+</ul>
+</div>
+<div class="bt">我和他第一次见面好无聊哦<span class="zf">100人祝福</span></div></div>
+
+
+
+</div>
+
+
+</div>
+</div>
+</body>
+</html>
